@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>Main page</div>
+    <div> inside Home section </div>
   )
 }
 
