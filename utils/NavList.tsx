@@ -1,41 +1,44 @@
-import { navListType } from "@/types/navList.Type";
-import { BsPeopleFill } from "react-icons/bs";
-import { FaHome } from "react-icons/fa";
-import { FaSuitcase } from "react-icons/fa";
-import { FaMessage } from "react-icons/fa6";
-import { IoNotifications } from "react-icons/io5";
+import {
+  AiFillHome,
+} from "react-icons/ai";
 
-export const NavList : navListType[] = [
-    {
-        id : 1 ,
-        title : "Home",
-        logo : <FaHome/>,
-        href : "/Home"
-    },
-    {
-        id : 2 , 
-        title : "My Network",
-        logo : <BsPeopleFill />,
-        href : "#"
-    },
-    {
-        id : 3 ,
-        title : "Jobs",
-        logo : <FaSuitcase />,
-        href : "#"
-    },
+import {
+  MdPeople,
+} from "react-icons/md";
 
-    {
-        id : 4 ,
-        title : "Messaging",
-        logo : <FaMessage />,
-        href : "#"
-    },
+import {
+  HiBriefcase,
+} from "react-icons/hi";
 
-    {
-        id : 5 ,
-        title : "Notification",
-        logo : <IoNotifications />,
-        href : "#"
-    },
-]
+import {
+  BsChatDotsFill,
+  BsBellFill,
+} from "react-icons/bs";
+
+export const NavList = [
+  {
+    id: 1,
+    title: "Home",
+    logo: <AiFillHome />,
+  },
+  {
+    id: 2,
+    title: "My Network",
+    logo: <MdPeople />,
+  },
+  {
+    id: 3,
+    title: "Jobs",
+    logo: <HiBriefcase />,
+  },
+  {
+    id: 4,
+    title: "Messaging",
+    logo: <BsChatDotsFill />,
+  },
+  {
+    id: 5,
+    title: "Notifications",
+    logo: <BsBellFill />,
+  },
+];

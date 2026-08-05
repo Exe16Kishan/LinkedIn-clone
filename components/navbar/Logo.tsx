@@ -1,9 +1,10 @@
 function Logo() {
   return (
-    <div
-    >
-      <img src="https://img.icons8.com/?size=60&id=13930&format=png&color=000000" alt="" />
-    </div>
+    <img
+      src="https://img.icons8.com/color/48/linkedin.png"
+      alt="linkedin"
+      className="w-9 h-9 cursor-pointer"
+    />
   );
 }
 

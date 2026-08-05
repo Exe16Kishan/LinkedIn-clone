@@ -1,20 +1,23 @@
-import NavList from "@/components/navbar/NavList";
 import Logo from "@/components/navbar/Logo";
-import ProfileIcon from "@/components/navbar/ProfileIcon";
 import Searchbar from "@/components/navbar/Searchbar";
+import NavList from "@/components/navbar/NavList";
+import ProfileIcon from "@/components/navbar/ProfileIcon";
 
 function Navbar() {
   return (
-    <div className="flex justify-evenly items-center gap-10 mt-2">
-      <div className="flex justify-center items-center gap-2">
-        <Logo />
-        <Searchbar />
+    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+      <div className="max-w-6xl mx-auto h-14 flex items-center justify-between px-4">
+        <div className="flex items-center gap-3">
+          <Logo />
+          <Searchbar />
+        </div>
+
+        <div className="flex items-center gap-4">
+          <NavList />
+          <ProfileIcon />
+        </div>
       </div>
-      <div className=" flex justify-center items-center gap-5">
-        <NavList />
-        <ProfileIcon />
-      </div>
-    </div>
+    </header>
   );
 }
 

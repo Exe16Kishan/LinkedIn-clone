@@ -1,13 +1,17 @@
-import React from 'react'
-import { BiSearch } from 'react-icons/bi'
+import { BiSearch } from "react-icons/bi";
 
 function Searchbar() {
   return (
-      <div className='bg-gray-200 rounded-full w-fit p-2'>
-        <span className='flex items-center gap-2'><BiSearch /> <input placeholder='Search' type='search' className=' border-none pointer-events-auto outline-none ' /></span>
-       
+    <div className="flex items-center bg-[#edf3f8] rounded-md px-3 py-2 w-72">
+      <BiSearch className="text-xl text-gray-600" />
+
+      <input
+        type="search"
+        placeholder="Search"
+        className="bg-transparent outline-none ml-2 w-full text-sm"
+      />
     </div>
-  )
+  );
 }
 
-export default Searchbar
+export default Searchbar;
