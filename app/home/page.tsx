@@ -9,7 +9,7 @@ export default function HomePage() {
       <Navbar />
 
       <main className="max-w-6xl mx-auto flex gap-6 pt-6 px-4">
-        <aside className="w-56.25 shrink-0">
+        <aside className="w-56.25 shrink-0 sticky top-20 self-start">
           <Sidebar />
         </aside>
 
@@ -17,7 +17,7 @@ export default function HomePage() {
           <Feed />
         </section>
 
-        <aside className="w-75 shrink-0">
+        <aside className="w-75 shrink-0 sticky top-20 self-start">
           <News />
         </aside>
       </main>
