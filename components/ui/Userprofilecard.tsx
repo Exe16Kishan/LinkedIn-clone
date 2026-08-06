@@ -1,3 +1,5 @@
+import Avatar from "./Avatar";
+
 interface Props {
   coverImg: string;
   profileImg: string;
@@ -25,12 +27,7 @@ export default function UserProfileCard({
           className="h-20 w-full object-cover"
           alt=""
         />
-
-        <img
-          src={profileImg}
-          className="absolute left-4 top-14 h-16 w-16 rounded-full border-2 border-white object-cover"
-          alt=""
-        />
+      <Avatar src={profileImg} className="absolute left-4 top-14 h-16 w-16 rounded-full border-2 border-white object-cover"/>
       </div>
 
       <div className="pt-12 px-4 pb-4">
