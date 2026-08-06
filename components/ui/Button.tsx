@@ -1,14 +1,19 @@
-import React from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode;
   text: string;
 }
 
-function Button({ icon, text }: ButtonProps) {
+function Button({
+  icon,
+  text,
+  className = "",
+  ...props
+}: ButtonProps) {
   return (
     <button
-      className="
+      className={`
         flex
         items-center
         gap-2
@@ -20,7 +25,9 @@ function Button({ icon, text }: ButtonProps) {
         text-[14px]
         font-semibold
         text-[#666666]
-      "
+        ${className}
+      `}
+      {...props}
     >
       {icon}
       <span>{text}</span>
