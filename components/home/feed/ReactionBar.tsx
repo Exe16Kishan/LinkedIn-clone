@@ -24,7 +24,6 @@ function Action({ icon ,count }: ActionProps) {
 export default function ReactionBar({ post }: ReactionBarProps) {
   return (
     <>
-      <div className="mx-4 mt-3 border-t" />
 
       <div className="flex px-2">
         <Action icon={<ThumbsUp size={20} />}    count={post.likes}/>
